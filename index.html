@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Friendship Day ❤️</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+
+<audio id="music" loop>
+    <source src="assets/photos/music.mpeg" type="audio/mpeg">
+</audio>
+
+<div id="stars"></div>
+
+<!-- INTRO -->
+
+<section class="screen active" id="intro">
+
+<div class="glass">
+
+<h3>A Small Surprise...</h3>
+
+<h1>For You💙</h1>
+
+<p>Made with love by Kinjal</p>
+
+<button id="beginBtn">
+Begin ✨
+</button>
+
+</div>
+
+</section>
+
+<!-- GIFT -->
+
+<section class="screen" id="giftScreen">
+
+<h2>Tap the Gift 🎁</h2>
+
+<div id="gift">
+
+<div class="lid"></div>
+
+<div class="box"></div>
+
+</div>
+
+</section>
+
+<!-- BRACELET -->
+
+<section class="screen" id="braceletScreen">
+
+<div class="bracelet">
+
+<div class="circle">
+    <img src="assets/photos/bracelet.jpg" alt="Bracelet" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23fbbf24%22/><text x=%2250%25%22 y=%2250%25%22 fill=%22white%22 font-size=%2220%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>Bracelet</text></svg>'">
+</div>
+
+</div>
+
+<h2 class="quote">
+
+Some bonds are created by destiny...
+
+and kept alive by friendship.
+
+</h2>
+
+<button id="continueBtn">
+
+Continue ❤️
+
+</button>
+
+</section>
+
+<!-- MESSAGE -->
+
+<section class="screen" id="messageScreen">
+
+<div class="glass messageCard">
+
+<h1>Happy Friendship Day Mahi 💙</h1>
+
+<p>
+
+Friendship isn't measured by how long we've known each other.
+
+It's measured by every smile,
+
+every laugh,
+
+every memory,
+
+and every moment we've stood by each other.
+
+Thank you for making life brighter.
+
+May our friendship always remain just as beautiful.
+
+✨❤️✨
+
+</p>
+
+<h3>- Kinjal</h3>
+
+</div>
+
+<button id="memoryBtn">
+
+See Our Memories 📸
+
+</button>
+
+</section>
+
+<!-- TIMELINE -->
+
+<section class="screen" id="timeline">
+
+<h1>Beautiful Memories ✨</h1>
+
+<div class="timeline">
+
+<div class="card left">
+
+<div class="cardMedia">
+
+<img src="assets/photos/1.jpeg" alt="First Smile" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22600%22 height=%22720%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%233b82f6%22/><text x=%2250%25%22 y=%2250%25%22 fill=%22white%22 font-size=%2240%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>Photo 1</text></svg>'">
+
+<h3>First Smile</h3>
+
+</div>
+
+<div class="cardMsg">
+
+<p>Every friendship begins with a smile... and yours is the one that started it all. ✨</p>
+
+</div>
+
+</div>
+
+<div class="card right">
+
+<div class="cardMsg">
+
+<p>Our silly, crazy moments? Honestly, they're my favourite ones. 😄</p>
+
+</div>
+
+<div class="cardMedia">
+
+<img src="assets/photos/2.jpeg" alt="Crazy Memories" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22600%22 height=%22720%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23ec4899%22/><text x=%2250%25%22 y=%2250%25%22 fill=%22white%22 font-size=%2240%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>Photo 2</text></svg>'">
+
+<h3>Crazy Memories</h3>
+
+</div>
+
+</div>
+
+<div class="card left">
+
+<div class="cardMedia">
+
+<img src="assets/photos/3.jpeg" alt="Endless Laughs" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22600%22 height=%22720%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23f59e0b%22/><text x=%2250%25%22 y=%2250%25%22 fill=%22white%22 font-size=%2240%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>Photo 3</text></svg>'">
+
+<h3>Endless Laughs</h3>
+
+</div>
+
+<div class="cardMsg">
+
+<p>I still laugh out loud just thinking about us. No one makes me smile like you do. 😂</p>
+
+</div>
+
+</div>
+
+<div class="card right">
+
+<div class="cardMsg">
+
+<p>Every moment with you turns into a golden memory. 🌟</p>
+
+</div>
+
+<div class="cardMedia">
+
+<img src="assets/photos/4.jpeg" alt="Best Moments" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22600%22 height=%22720%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%2310b981%22/><text x=%2250%25%22 y=%2250%25%22 fill=%22white%22 font-size=%2240%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>Photo 4</text></svg>'">
+
+<h3>Best Moments</h3>
+
+</div>
+
+</div>
+
+<div class="card left">
+
+<div class="cardMedia">
+
+<img src="assets/photos/5.jpeg" alt="Forever Friends" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22600%22 height=%22720%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%238b5cf6%22/><text x=%2250%25%22 y=%2250%25%22 fill=%22white%22 font-size=%2240%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>Photo 5</text></svg>'">
+
+<h3>Forever Friends ❤️</h3>
+
+</div>
+
+<div class="cardMsg">
+
+<p>No matter where life takes us, you'll always be my forever friend. 💙</p>
+
+</div>
+
+</div>
+
+<div class="card right">
+
+<div class="cardMsg">
+
+<p>Two hearts, one friendship — that's the rarest kind of magic there is. 🪄</p>
+
+</div>
+
+<div class="cardMedia">
+
+<img src="assets/photos/6.jpeg" alt="Two Hearts" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22600%22 height=%22720%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23f43f5e%22/><text x=%2250%25%22 y=%2250%25%22 fill=%22white%22 font-size=%2240%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>Photo 6</text></svg>'">
+
+<h3>Two Hearts 💞</h3>
+
+</div>
+
+</div>
+
+<div class="card left">
+
+<div class="cardMedia">
+
+<img src="assets/photos/7.jpeg" alt="Adventures Ahead" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22600%22 height=%22720%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%230ea5e9%22/><text x=%2250%25%22 y=%2250%25%22 fill=%22white%22 font-size=%2240%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>Photo 7</text></svg>'">
+
+<h3>Adventures Ahead 🚀</h3>
+
+</div>
+
+<div class="cardMsg">
+
+<p>This is just the beginning — I can't wait for every adventure still waiting for us. 🌍</p>
+
+</div>
+
+</div>
+
+</div>
+
+<button id="finalBtn">
+
+Continue 🎆
+
+</button>
+
+</section>
+
+<!-- FINAL -->
+
+<section class="screen" id="finalScreen">
+
+<div class="glass finalCard">
+
+<h1>Happy Friendship Day 💙</h1>
+
+<h2>Mahi</h2>
+
+<p>
+
+No matter what happens...
+
+No matter where life takes us...
+
+I hope our friendship always stays the same.
+
+Thank you for being you.
+
+❤️
+
+</p>
+
+<h3>
+
+With Love,
+
+Kinjal
+
+</h3>
+
+<button id="replay">
+
+Replay Surprise ✨
+
+</button>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
